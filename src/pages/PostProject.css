@@ -1,0 +1,217 @@
+.post-project-page {
+  min-height: 100vh;
+  padding: 60px 7%;
+  background: #F9FAFB;
+  color: #101828;
+}
+
+/* Header */
+.post-project-header {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.post-project-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #10B981;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.post-project-header h1 {
+  margin: 0 0 16px;
+  color: #101828;
+  font-size: clamp(32px, 4vw, 46px);
+}
+
+.post-project-header p {
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Form Container */
+.post-project-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #FFFFFF;
+  border: 1px solid #EAECF0;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(16, 24, 40, 0.04);
+}
+
+.post-project-intro {
+  margin-bottom: 30px;
+}
+
+.post-project-intro h2 {
+  margin: 0 0 10px;
+  color: #101828;
+  font-size: 25px;
+}
+
+.post-project-intro p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Success Message */
+.post-project-success {
+  margin-bottom: 25px;
+  padding: 15px 18px;
+  color: #047857;
+  background: #D1FAE5;
+  border: 1px solid #A7F3D0;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Form */
+.post-project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.form-group label {
+  color: #101828;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 15px;
+  color: #101828;
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input,
+.form-group select {
+  min-height: 48px;
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #10B981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #98A2B3;
+}
+
+.form-group small {
+  color: #667085;
+  font-size: 12px;
+}
+
+/* Buttons */
+.post-project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.post-project-submit,
+.post-project-cancel {
+  min-height: 48px;
+  padding: 13px 24px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.post-project-submit {
+  flex: 1;
+  color: #FFFFFF;
+  background: #10B981;
+  border: 1px solid #10B981;
+}
+
+.post-project-submit:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+.post-project-cancel {
+  color: #344054;
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+}
+
+.post-project-cancel:hover {
+  background: #F2F4F7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post-project-page {
+    padding: 40px 5%;
+  }
+
+  .post-project-container {
+    padding: 28px;
+  }
+
+  .post-project-header h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-project-page {
+    padding: 30px 4%;
+  }
+
+  .post-project-container {
+    padding: 21px;
+    border-radius: 14px;
+  }
+
+  .post-project-header h1 {
+    font-size: 30px;
+  }
+
+  .post-project-actions {
+    flex-direction: column;
+  }
+
+  .post-project-submit,
+  .post-project-cancel {
+    width: 100%;
+  }
+}
